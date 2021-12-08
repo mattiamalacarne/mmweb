@@ -1,0 +1,78 @@
+#about {
+    background-color: $primary-color;
+    background-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
+    display: flex;
+    color: $white-color;
+    height: 100%;
+    width: 100%;
+    border-top: 0px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding: 25px;
+    padding-bottom: 10%;
+  
+    @include respond(tab-land) {
+      height: 100%;
+      -webkit-clip-path: none;
+      clip-path: none;
+    }
+
+    .abt-title {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @include respond(phone) {
+        margin-bottom: 25px;
+      }
+    }
+
+    .abt-wrapper {
+      margin-top: 25px;
+    }
+
+    .abt-img {
+      align-self: center;
+      align-content: center;
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+
+      @include respond(tab-port) {
+        width: 300px;
+        height: 300px;
+      }
+
+      @include respond(phone) {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    .abt-desc-title {
+      font-size: 18px;
+
+      @include respond(tab-port){
+        font-size: 16px;
+      } 
+      @include respond(phone)
+      {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 45px;
+      }  
+    }
+
+    .abt-desc {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .abt-container {
+      width: 100%;
+    }
+  
+  }

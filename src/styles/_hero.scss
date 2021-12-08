@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+#hero {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $white-color;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    z-index: -1;
+    color: $secondary-color;
+    padding: 0rem 6.5rem;
+
+
+    @include respond(phone) {
+        padding: 0rem $default-font-size;
+    }
+
+    .hero-title {
+        font-size: 4.2rem;
+        font-weight: 700;
+        margin-bottom: 3.2rem;
+        text-align: left;
+
+        @include respond(tab-land) {
+            font-size: 3.2rem;
+        }
+        @include respond(tab-port) {
+            font-size: 2.8rem;
+            text-align: center;
+        }
+        @include respond(phone) {
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+        @include respond(phone-xs) {
+            font-size: 1.6rem;
+        }
+    }
+    
+}

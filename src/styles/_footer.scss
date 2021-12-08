@@ -1,0 +1,25 @@
+#footer {
+    padding: 50px;
+    width: 100%;
+    background-color: $secondary-color;
+    color: #fff;
+    text-align: center;
+
+    .footer-content {
+    }
+
+    .license {
+        width: 100%;
+        background-color: $secondary-color;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+    
+        .license-text {
+            font-size: 14px;
+        }
+    }
+    
+}
+

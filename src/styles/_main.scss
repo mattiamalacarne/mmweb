@@ -1,0 +1,14 @@
+// Stili generici
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+// Testo
+@import './typo';
+
+// Sezioni
+@import './hero';
+@import './about';
+@import './projects';
+@import './footer';
+
+@import "~bootstrap/scss/bootstrap";

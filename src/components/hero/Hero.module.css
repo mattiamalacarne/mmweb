@@ -1,0 +1,22 @@
+.container {
+    background-color: #fff;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    z-index: -1;
+    color: #263238;
+    padding: 0rem 5.6rem;
+}
+
+.hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+}
+
+.text-color-main {
+    color: #01579b;
+}
